@@ -78,9 +78,14 @@ install jpeg
 install brew-cask
 
 # .dmg
+cask install dropbox
+cask install 1password
 cask install google-chrome
+cask install atom
 cask install evernote
+cask install remote-desktop-connection
 cask install iterm2
+cask install alfred
 cask install kobito
 cask install virtualbox
 cask install vagrant
@@ -91,7 +96,6 @@ cask install xquartz
 cask install yorufukurou
 cask install skype
 cask install cinch
-cask install dropbox
 cask install googleappenginelauncher
 cask install pycharm
 cask install rubymine
