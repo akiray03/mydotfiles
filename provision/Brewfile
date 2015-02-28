@@ -1,0 +1,105 @@
+# Make sure using latest Homebrew
+update
+
+# Update already-installed formula (takes too much time, I will do it manually later)
+# upgrade
+
+# Add Repository
+tap homebrew/versions || true
+tap phinze/homebrew-cask || true
+tap homebrew/binary || true
+tap sonots/mycask || true
+
+# Build tools
+install gcc
+install autoconf
+install automake
+install cmake
+
+# ruby-build depends
+# https://github.com/sstephenson/ruby-build/wiki
+install openssl
+install libyaml
+install readline
+install libffi
+
+install libxml2
+install libxslt
+
+# Packages
+install tmux
+install zsh
+install zsh-completions
+install git
+install git-extras
+install hub
+install gist
+install tig
+install wget
+install tree
+install lv
+install bash
+install bash-completion
+install arping
+install jq
+install md5sha1sum
+
+install direnv
+
+install mysql
+install sqlite
+
+install python
+
+install autossh
+install sshfs
+install ack
+install ctags
+install nkf
+install pkg-config
+install pidof
+install libtool
+install z
+install proctools
+install gnu-tar
+install libevent
+install node
+install watch
+install go
+install xz
+install xpdf
+install unrar
+
+install imagemagick
+install freetype
+install libpng
+install jpeg
+
+install brew-cask
+
+# .dmg
+cask install google-chrome
+cask install evernote
+cask install iterm2
+cask install kobito
+cask install virtualbox
+cask install vagrant
+# cask install echofon
+cask install dash
+#cask install vlc
+cask install xquartz
+cask install yorufukurou
+cask install skype
+cask install cinch
+cask install dropbox
+cask install googleappenginelauncher
+cask install pycharm
+cask install rubymine
+cask install wireshark
+cask install vmware-fusion
+cask install gyazo
+cask install sublime-text
+cask install coteditor
+
+# Remove outdated versions
+cleanup
