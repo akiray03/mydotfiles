@@ -1,4 +1,4 @@
-export DOTFILES_ROOT="$HOME/.dotfiles"
+export DOTFILES_ROOT="$HOME/.mydotfiles"
 
 for file in "$DOTFILES_ROOT"/functions/*; do
   source "$file"
