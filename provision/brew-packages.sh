@@ -72,6 +72,8 @@ brew install unrar
 
 brew install imagemagick freetype libpng jpeg
 
+# for PIL
+ln -s /usr/local/include/freetype2 /usr/local/include/freetype
 
 # .dmg
 brew cask install dropbox 1password
