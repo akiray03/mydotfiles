@@ -18,3 +18,5 @@
 # Bundler
 .bundle
 /vendor/bundle
+
+.envrc
