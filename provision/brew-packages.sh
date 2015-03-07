@@ -15,6 +15,8 @@ if ! command_exist brew; then
   exit 1
 fi
 
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+
 # Make sure using latest Homebrew
 brew update
 
