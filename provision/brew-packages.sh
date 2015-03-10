@@ -101,6 +101,7 @@ brew cask install wireshark
 brew cask install vmware-fusion
 brew cask install gyazo
 brew cask install kindle
+brew cask install slack
 
 # Remove outdated versions
 brew cleanup
