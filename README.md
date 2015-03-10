@@ -14,6 +14,15 @@ curl -L https://raw.github.com/akiray03/mydotfiles/master/script/install.sh | ba
 dotfiles-sync
 ```
 
+## memo
+
+```bash
+$ sudo vim /etc/shells
+  ## -> add /usr/local/bin/zsh
+$ chsh
+  ## -> change shell
+```
+
 # Links
 
  - Google日本語入力 - https://www.google.co.jp/ime/

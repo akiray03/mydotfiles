@@ -78,11 +78,14 @@ brew install imagemagick freetype libpng jpeg
 ln -s /usr/local/include/freetype2 /usr/local/include/freetype
 
 # .dmg
-brew cask install dropbox 1password
-brew cask install google-chrome
+brew cask install dropbox
+brew cask install bettertouchtool
+# brew cask install 1password # AppStore から入れる
+# brew cask install google-chrome # 本家からダウンロード
+brew cask install firefox
 brew cask install atom kobito sublime-text coteditor
 brew cask install evernote
-brew cask install remote-desktop-connection
+#brew cask install remote-desktop-connection # AppStore の Microsoft Remote Desktop 使う
 brew cask install iterm2
 brew cask install alfred
 brew cask install virtualbox
@@ -95,9 +98,10 @@ brew cask install xquartz
 brew cask install skype
 brew cask install cinch
 brew cask install googleappengine
+brew cask install caskroom/homebrew-versions/java6
 brew cask install pycharm
 brew cask install rubymine
-brew cask install wireshark
+#brew cask install wireshark
 brew cask install vmware-fusion
 brew cask install gyazo
 brew cask install kindle
