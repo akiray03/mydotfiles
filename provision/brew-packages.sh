@@ -47,6 +47,7 @@ brew install wget tree lv
 brew install bash bash-completion
 brew install arping jq
 brew install md5sha1sum
+brew install mobile-shell # a.k.a mosh
 
 brew install direnv
 
