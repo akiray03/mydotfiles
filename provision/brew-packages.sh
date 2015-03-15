@@ -79,6 +79,7 @@ brew install imagemagick freetype libpng jpeg
 ln -s /usr/local/include/freetype2 /usr/local/include/freetype
 
 # .dmg
+brew cask install google-drive
 brew cask install dropbox
 brew cask install bettertouchtool
 # brew cask install 1password # AppStore から入れる
