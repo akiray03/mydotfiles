@@ -40,70 +40,24 @@ brew install gcc autoconf automake cmake
 brew install openssl libyaml readline libffi libxml2 libxslt
 
 # Packages
-brew install tmux
-brew install zsh zsh-completions
-brew install git git-extras hub gist tig
-brew install wget tree lv
-brew install bash bash-completion
-brew install arping jq
-brew install md5sha1sum
-brew install mobile-shell # a.k.a mosh
+brew install tmux zsh zsh-completions git git-extras hub gist tig wget tree lv
+brew install bash bash-completion jq md5sha1sum
+brew install mobile-shell arping autossh
 
-brew install direnv
-
-brew install mysql sqlite
-
-brew install python
-
-brew install autossh
-brew cask install osxfuse
-brew install ack
-brew install ctags
-brew install nkf
-brew install pkg-config
-brew install pidof
-brew install libtool
-brew install z
-brew install proctools
-brew install gnu-tar
-brew install libevent
-brew install node
-brew install watch
-brew install go
-brew install xz
-brew install unrar
-
+brew install direnv mysql sqlite python ack ctags nkf pkg-config pidof libtool z
+brew install proctools gnu-tar libevent node watch go xz unrar
 brew install imagemagick freetype libpng jpeg
 
 # for PIL
-ln -s /usr/local/include/freetype2 /usr/local/include/freetype
+if [ ! -e /usr/local/include/freetype ]; then
+  ln -s /usr/local/include/freetype2 /usr/local/include/freetype
+fi
 
 # .dmg
-brew cask install google-drive
-brew cask install bettertouchtool
-brew cask install atom kobito sublime-text coteditor
-brew cask install evernote
-brew cask install iterm2
-brew cask install alfred
-brew cask install virtualbox
-brew cask install vagrant
-# cask install echofon
-brew cask install dash
-#cask install vlc
-brew cask install xquartz
-# brew cask install yorufukurou
-brew cask install skype
-brew cask install cinch
-brew cask install googleappengine
-brew cask install caskroom/homebrew-versions/java6
-brew cask install pycharm
-brew cask install rubymine
-#brew cask install wireshark
-brew cask install vmware-fusion
-brew cask install gyazo
-brew cask install kindle
-brew cask install slack
-brew cask install hipchat
+brew cask install google-drive bettertouchtool atom kobito sublime-text coteditor
+brew cask install evernote iterm2 alfred virtualbox vagrant dash vlc xquartz
+brew cask install skype cinch googleappengine java caskroom/homebrew-versions/java6 
+brew cask install pycharm rubymine vmware-fusion gyazo kindle slack hipchat osxfuse
 
 # Remove outdated versions
 brew cleanup
