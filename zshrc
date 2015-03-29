@@ -17,3 +17,9 @@ done
 for file in "$DOTFILES_ROOT"/zshrc.d/*; do
   source "$file"
 done
+
+if [ -d $HOME/.zshrc.d ]; then
+  for file in $HOME/.zshrc.d/*; do
+    source "$file"
+  done
+fi
