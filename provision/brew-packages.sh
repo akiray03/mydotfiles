@@ -46,7 +46,7 @@ brew install mobile-shell arping autossh
 
 brew install direnv mysql sqlite python ack ctags nkf pkg-config pidof libtool z
 brew install proctools gnu-tar libevent node watch go xz unrar
-brew install imagemagick freetype libpng jpeg
+brew install imagemagick freetype libpng jpeg ec2-api-tools
 
 # for PIL
 if [ ! -e /usr/local/include/freetype ]; then
