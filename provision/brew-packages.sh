@@ -42,11 +42,11 @@ brew install openssl libyaml readline libffi libxml2 libxslt
 # Packages
 brew install tmux zsh zsh-completions git git-extras hub gist tig wget tree lv
 brew install bash bash-completion jq md5sha1sum
-brew install mobile-shell arping autossh
+brew install mobile-shell arping autossh cmake
 
 brew install direnv mysql sqlite python ack ctags nkf pkg-config pidof libtool z
 brew install proctools gnu-tar libevent node watch go xz unrar
-brew install imagemagick freetype libpng jpeg ec2-api-tools
+brew install imagemagick freetype libpng jpeg ec2-api-tools ghostscript mecab mecab-ipadic phantomjs
 
 # for PIL
 if [ ! -e /usr/local/include/freetype ]; then
@@ -58,6 +58,7 @@ brew cask install google-drive bettertouchtool atom kobito sublime-text cotedito
 brew cask install evernote iterm2 alfred virtualbox vagrant dash vlc xquartz
 brew cask install skype cinch googleappengine java caskroom/homebrew-versions/java6 
 brew cask install pycharm rubymine vmware-fusion gyazo kindle slack hipchat osxfuse
+brew cask install mysqlworkbench
 
 # Remove outdated versions
 brew cleanup
