@@ -68,6 +68,9 @@ autocmd FileType javascript setlocal softtabstop=2 shiftwidth=2 tabstop=2 expand
 autocmd FileType python setlocal softtabstop=4 shiftwidth=4 tabstop=4 expandtab
 autocmd FileType json setlocal softtabstop=4 shiftwidth=4 tabstop=4 expandtab
 
+au BufRead,BufNewFile,BufReadPre *.coffee   set filetype=coffee
+autocmd FileType coffee    setlocal sw=2 sts=2 ts=2 et
+
 filetype on
 filetype indent on
 filetype plugin on
