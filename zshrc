@@ -24,5 +24,12 @@ if [ -d $HOME/.zshrc.d ]; then
   done
 fi
 
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
+add_path()
+{
+  if [ ! -z $1 ] && [ -d $1 ]; then
+    export PATH=$1:$PATH
+  fi
+}
+
+add_path /usr/local/heroku/bin
+add_path $HOME/local/gsutil
