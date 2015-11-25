@@ -60,7 +60,7 @@ NeoBundle 'jelera/vim-javascript-syntax', {'autoload':{'filetypes':['javascript'
 "---------------------------------
 " language spacific settings
 "set cindent
-autocmd FileType sh,bash,zsh setlocal shiftwidth=2 softtabstop=2  expandtab
+"autocmd FileType sh,bash,zsh setlocal shiftwidth=2 softtabstop=2  expandtab
 autocmd FileType rb,ruby,eruby setlocal softtabstop=2 shiftwidth=2 expandtab
 autocmd FileType c setlocal shiftwidth=2 tabstop=2 cindent
 autocmd FileType html,htmldjango setlocal softtabstop=2 shiftwidth=2 tabstop=2 expandtab
