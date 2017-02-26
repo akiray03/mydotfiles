@@ -32,32 +32,6 @@ set list
 set listchars=tab:^\ ,trail:~
 
 "---------------------------------
-" NeoBundle
-set nocompatible               " be iMproved
-filetype off
-
-if has('vim_starting')
-	set runtimepath+=~/.vim/bundle/neobundle.vim
-	call neobundle#begin(expand('~/.vim/bundle/'))
-	NeoBundleFetch 'Shougo/neobundle.vim'
-	call neobundle#end()
-endif
-
-" originalrepos on github
-NeoBundle 'Shougo/neobundle.vim'
-NeoBundle 'Shougo/vimproc'
-NeoBundle 'VimClojure'
-NeoBundle 'Shougo/vimshell'
-NeoBundle 'Shougo/unite.vim'
-NeoBundle 'Shougo/neocomplcache'
-" NeoBundle 'Shougo/neosnippet'
-" NeoBundle 'Shougo/neosnippet-snippets'
-NeoBundle 'jpalardy/vim-slime'
-NeoBundle 'scrooloose/syntastic'
-NeoBundle 'Simple-Javascript-Indenter'
-NeoBundle 'jelera/vim-javascript-syntax', {'autoload':{'filetypes':['javascript']}}
-
-"---------------------------------
 " language spacific settings
 "set cindent
 "autocmd FileType sh,bash,zsh setlocal shiftwidth=2 softtabstop=2  expandtab
@@ -95,28 +69,3 @@ if has('syntax')
     autocmd VimEnter,BufEnter * call ZenkakuSpace()
   augroup END
 endif
-
-"---- neocomplcache の設定
-" neocomplcache
-let g:NeoComplCache_EnableAtStartup = 1
-" 大文字小文字を区別する
-let g:NeoComplCache_SmartCase = 1
-" キャメルケース補完を有効にする
-let g:NeoComplCache_EnableCamelCaseCompletion = 1
-" アンダーバー補完を有効にする
-let g:NeoComplCache_EnableUnderbarCompletion = 1
-" シンタックスファイルの補完対象キーワードとする最小の長さ
-let g:NeoComplCache_MinSyntaxLength = 3
-" プラグイン毎の補完関数を呼び出す文字数
-let g:NeoComplCache_PluginCompletionLength = {
-  \ 'keyword_complete'  : 2,
-  \ 'syntax_complete'   : 2
-  \ }
-" ファイルタイプ毎の辞書ファイルの場所
-let g:NeoComplCache_DictionaryFileTypeLists = {
-            \ 'default' : '',
-            \ 'java' : $HOME.'/.vim/dict/j2se14.dict',
-            \ 'javascript' : $HOME.'/.vim/dict/javascript.dict',
-            \ 'php' : $HOME.'/.vim/dict/PHP.dict',
-            \ }
-
