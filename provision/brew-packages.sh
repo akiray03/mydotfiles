@@ -43,6 +43,8 @@ brew install openssl libyaml readline libffi libxml2 libxslt
 brew install tmux zsh zsh-completions git git-extras hub gist tig wget tree lv
 brew install bash bash-completion jq md5sha1sum
 brew install mobile-shell arping autossh cmake
+brew install reattach-to-user-namespace
+brew install pyenv rbenv ruby-build
 
 brew install direnv mysql sqlite python ack ctags nkf pkg-config pidof libtool z
 brew install proctools gnu-tar libevent node watch go xz unrar

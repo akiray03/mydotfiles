@@ -8,7 +8,7 @@ fpath=("$DOTFILES_ROOT/zsh-completions-osx" $fpath)
 # Initialize.
 zstyle :compinstall filename "$HOME/.zshrc"
 autoload -Uz compinit
-compinit
+compinit -C # -C オプションでセキュリティチェックをスキップして高速化
 
 # Enable completion selection with arrow keys.
 zstyle ':completion:*:default' menu select=2

@@ -33,12 +33,19 @@ add_path()
 
 add_path /usr/local/heroku/bin
 add_path $HOME/local/gsutil
+if [ -d $HOME/local/tfenv/bin ]; then
+  export PATH=$HOME/local/tfenv/bin:$PATH
+fi
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
 # The next line updates PATH for the Google Cloud SDK.
-source '/Users/akira/google-cloud-sdk/path.zsh.inc'
+if [ -f /Users/akira/google-cloud-sdk/path.zsh.inc ]; then
+  source '/Users/akira/google-cloud-sdk/path.zsh.inc'
+fi
 
 # The next line enables shell command completion for gcloud.
-source '/Users/akira/google-cloud-sdk/completion.zsh.inc'
+if [ -f /Users/akira/google-cloud-sdk/completion.zsh.inc ]; then
+  source '/Users/akira/google-cloud-sdk/completion.zsh.inc'
+fi

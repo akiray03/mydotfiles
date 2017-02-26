@@ -16,6 +16,7 @@ add_path "$HOME/local/bin" top
 add_path "$HOME/local/sbin" top
 add_path "$HOME/bin" top
 add_path "$HOME/sbin" top
+add_path "$HOME/local/terraform" top
 
 add_path "/usr/local/bin" top
 add_path "/usr/local/sbin" top

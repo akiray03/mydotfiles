@@ -26,3 +26,10 @@ gemfiles/vendor
 
 Gemfile.local
 Gemfile.local.lock
+
+log/*log*
+
+config/environments/sql4staff.rb
+config/twitter.yml
+
+/.idea/

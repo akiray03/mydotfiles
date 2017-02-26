@@ -9,6 +9,7 @@
 	st = status
 	br = branch
 	graph = log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	push-f = push --force-with-lease
 [core]
 	excludesfile = ~/.gitignore
 [push]
@@ -17,3 +18,7 @@
 	rebase = true
 [hub]
 	protocol = https
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
