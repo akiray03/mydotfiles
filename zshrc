@@ -37,16 +37,16 @@ if [ -f /Users/akira/google-cloud-sdk/completion.zsh.inc ]; then
   source '/Users/akira/google-cloud-sdk/completion.zsh.inc'
 fi
 
-for file in "$DOTFILES_ROOT"/functions/*; do
+for file in "$DOTFILES_ROOT"/functions/*.zsh; do
   source "$file"
 done
 
-for file in "$DOTFILES_ROOT"/zshrc.d/*; do
+for file in "$DOTFILES_ROOT"/zshrc.d/*.zsh; do
   source "$file"
 done
 
 if [ -d $HOME/.zshrc.d ]; then
-  for file in $HOME/.zshrc.d/*; do
+  for file in $HOME/.zshrc.d/*.zsh; do
     source "$file"
   done
 fi
