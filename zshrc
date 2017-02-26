@@ -10,20 +10,6 @@ autoload -Uz is-at-least
 # Enable hook function manipulation.
 autoload -Uz add-zsh-hook
 
-for file in "$DOTFILES_ROOT"/functions/*; do
-  source "$file"
-done
-
-for file in "$DOTFILES_ROOT"/zshrc.d/*; do
-  source "$file"
-done
-
-if [ -d $HOME/.zshrc.d ]; then
-  for file in $HOME/.zshrc.d/*; do
-    source "$file"
-  done
-fi
-
 add_path()
 {
   if [ ! -z $1 ] && [ -d $1 ]; then
@@ -31,6 +17,7 @@ add_path()
   fi
 }
 
+add_path /usr/local/bin
 add_path /usr/local/heroku/bin
 add_path $HOME/local/gsutil
 if [ -d $HOME/local/tfenv/bin ]; then
@@ -48,4 +35,18 @@ fi
 # The next line enables shell command completion for gcloud.
 if [ -f /Users/akira/google-cloud-sdk/completion.zsh.inc ]; then
   source '/Users/akira/google-cloud-sdk/completion.zsh.inc'
+fi
+
+for file in "$DOTFILES_ROOT"/functions/*; do
+  source "$file"
+done
+
+for file in "$DOTFILES_ROOT"/zshrc.d/*; do
+  source "$file"
+done
+
+if [ -d $HOME/.zshrc.d ]; then
+  for file in $HOME/.zshrc.d/*; do
+    source "$file"
+  done
 fi
