@@ -1,1 +1,1 @@
-export ANDROID_HOME=$( brew --prefix android-sdk )
+#export ANDROID_HOME=$( brew --prefix android-sdk )
