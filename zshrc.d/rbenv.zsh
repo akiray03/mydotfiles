@@ -1,4 +1,3 @@
-if [[ -d "$HOME/.rbenv" ]]; then
-  path=("$HOME/.rbenv/bin" $path)
+if [[ -e "/usr/local/bin/rbenv" ]]; then
   eval "$(rbenv init -)"
 fi

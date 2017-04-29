@@ -33,3 +33,8 @@ config/environments/sql4staff.rb
 config/twitter.yml
 
 /.idea/
+
+/tmp/
+
+.python-version
+docker-compose.local.yml
