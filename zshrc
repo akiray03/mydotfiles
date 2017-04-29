@@ -50,3 +50,6 @@ if [ -d $HOME/.zshrc.d ]; then
     source "$file"
   done
 fi
+
+export SDKMAN_DIR="/Users/akira/.sdkman"
+[[ -s "/Users/akira/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/akira/.sdkman/bin/sdkman-init.sh"
