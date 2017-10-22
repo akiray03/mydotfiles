@@ -51,6 +51,7 @@ if [ -d $HOME/.zshrc.d ]; then
   done
 fi
 
-export SDKMAN_DIR="$HOME/.sdkman"
-rm -f $SDKMAN_DIR/var/{version,candidates}
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+# Scalaを使う所で以下を記述
+# export SDKMAN_DIR="$HOME/.sdkman"
+# rm -f $SDKMAN_DIR/var/{version,candidates}
+# [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
