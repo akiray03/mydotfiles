@@ -1,4 +1,4 @@
-STFILE=~/.zsh_history
+HISTFILE=~/.zsh_history
 HISTSIZE=1000000
 SAVEHIST=1000000
 
@@ -16,3 +16,5 @@ setopt inc_append_history
 # history (fc -l) コマンドをヒストリリストから取り除く。
 setopt hist_no_store
 
+# 全履歴を一覧表示する
+function history-all { history -E 1 }
