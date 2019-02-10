@@ -56,3 +56,6 @@ fi
 # if [ -e "$SDKMAN_DIR/bin/sdkman-init.sh" ]; then
 #   source "$SDKMAN_DIR/bin/sdkman-init.sh"
 # fi
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/local/bin/tfschema tfschema
