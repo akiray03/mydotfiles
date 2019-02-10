@@ -107,7 +107,7 @@
 	gAKACoAN0xAJChEVGVdOUy5rZXlzoxITFIADgASABaMWFxiABoAHgAiACVpJZGVudGlm
 	aWVyVVdpZHRoVkhpZGRlblEwI0BowAAAAAAACNIhIiMkWiRjbGFzc25hbWVYJGNsYXNz
 	ZXNcTlNEaWN0aW9uYXJ5oiMlWE5TT2JqZWN00xAJCicrGaMSExSAA4AEgAWjLC0YgAuA
-	DIAIgAlRMSNAdCGdsi0OVtIhIjM0Xk5TTXV0YWJsZUFycmF5ozM1JVdOU0FycmF5XxAP
+	DIAIgAlRMSNAdKGdsi0OVtIhIjM0Xk5TTXV0YWJsZUFycmF5ozM1JVdOU0FycmF5XxAP
 	TlNLZXllZEFyY2hpdmVy0Tg5VUFycmF5gAEACAARABoAIwAtADIANwBGAEwAUQBcAGMA
 	ZgBoAGoAbABzAHsAfwCBAIMAhQCJAIsAjQCPAJEAnACiAKkAqwC0ALUAugDFAM4A2wDe
 	AOcA7gDyAPQA9gD4APwA/gEAAQIBBAEGAQ8BFAEjAScBLwFBAUQBSgAAAAAAAAIBAAAA
@@ -128,16 +128,18 @@
 		<key>TB Is Shown</key>
 		<integer>1</integer>
 	</dict>
+	<key>NSWindow Frame NSFontPanel</key>
+	<string>2186 424 504 420 1680 -161 2560 1417 </string>
 	<key>NSWindow Frame SUStatusFrame</key>
-	<string>4165 1235 400 129 2048 69 2560 1417 </string>
+	<string>1426 1109 400 129 0 0 2048 1257 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>3018 838 620 392 2048 69 2560 1417 </string>
+	<string>1370 1118 620 392 0 0 3360 1867 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
-	<string>1949 -22 606 456 1680 -161 2560 1417 </string>
+	<string>148 82 606 469 0 0 1680 1027 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>2486 514 918 512 1680 -161 2560 1417 </string>
+	<string>2486 482 918 492 1680 -161 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>2948 153 1612 883 2048 69 2560 1417 </string>
+	<string>719 110 1272 1072 0 0 2048 1257 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>614 66 1066 542 0 0 1680 1027 </string>
 	<key>New Bookmarks</key>
@@ -334,7 +336,7 @@
 			<key>Close Sessions On End</key>
 			<true/>
 			<key>Columns</key>
-			<integer>200</integer>
+			<integer>140</integer>
 			<key>Command</key>
 			<string>/usr/local/bin/zsh</string>
 			<key>Cursor Color</key>
@@ -689,11 +691,11 @@
 			<key>Name</key>
 			<string>Default</string>
 			<key>Non Ascii Font</key>
-			<string>Monaco 14</string>
+			<string>Ricty-Regular 16</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>Monaco 14</string>
+			<string>Ricty-Regular 16</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -701,7 +703,7 @@
 			<key>Right Option Key Sends</key>
 			<integer>0</integer>
 			<key>Rows</key>
-			<integer>45</integer>
+			<integer>35</integer>
 			<key>Screen</key>
 			<integer>-1</integer>
 			<key>Scrollback Lines</key>
@@ -953,7 +955,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-10-03T17:01:14Z</date>
+	<date>2018-10-09T11:28:38Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
@@ -1000,9 +1002,11 @@
 	<string>/-+\~_.</string>
 	<key>findIgnoreCase_iTerm</key>
 	<true/>
+	<key>findMode_iTerm</key>
+	<integer>0</integer>
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.1.2</string>
+	<string>3.2.2</string>
 </dict>
 </plist>
