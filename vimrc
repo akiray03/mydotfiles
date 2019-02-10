@@ -109,3 +109,7 @@ if has('syntax')
     autocmd VimEnter,BufEnter * call ZenkakuSpace()
   augroup END
 endif
+
+" vim-json の JSONダブルクォーテーション非表示機能を無効化
+" https://qiita.com/kadoppe/items/ffaef1f5a69f2cfcf12e
+let g:vim_json_syntax_conceal = 0
