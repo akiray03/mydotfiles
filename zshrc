@@ -27,16 +27,6 @@ fi
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f /Users/akira/google-cloud-sdk/path.zsh.inc ]; then
-  source '/Users/akira/google-cloud-sdk/path.zsh.inc'
-fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f /Users/akira/google-cloud-sdk/completion.zsh.inc ]; then
-  source '/Users/akira/google-cloud-sdk/completion.zsh.inc'
-fi
-
 for file in "$DOTFILES_ROOT"/functions/*.zsh; do
   source "$file"
 done
